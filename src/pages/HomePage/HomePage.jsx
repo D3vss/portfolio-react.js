@@ -2,6 +2,7 @@ import React from "react";
 
 import { Layout, Button } from "../../components";
 import { FaLinkedin, FaGithubSquare, FaTwitterSquare } from "react-icons/fa";
+import { BsBoxArrowInUpRight } from "react-icons/bs";
 import vect1 from "../../assets/vect1.png";
 import vect2 from "../../assets/vect2.png";
 import vect3 from "../../assets/vect3.png";
@@ -18,23 +19,35 @@ function HomePage(props) {
             <p className="text-base font-normal mb-10">
               A Web and Mobile Developer, and a Data enthusiast.
             </p>
-            <div className="flex flex-row w-4/12 justify-between">
+            <div className="flex flex-row w-full">
               <Button label={"Hire Me!"} variant="filled" />
-              <Button label={"Projects"} variant="outlined" />
+              <Button
+                label={"Projects"}
+                icon={<BsBoxArrowInUpRight className="ml-2" />}
+                variant="outlined"
+              />
             </div>
           </div>
 
-          <footer className="flex flex-col items-center mt-auto container bg-gray-900 h-1/4">
-            <div className="container px-20 mx-auto h-1 bg-blue-700" />
-
-            <p className="text-lg text-gray-200">Find me on:</p>
-            <div className="flex flex-row w-1/4 justify-between">
-              <FaGithubSquare className="text-gray-200 text-5xl" />
-              <FaTwitterSquare className="text-gray-200 text-5xl" />
-              <FaLinkedin className="text-gray-200 text-5xl" />
+          <footer className="flex flex-col items-center mt-auto container bg-gray-900">
+            <div className="container px-20 mx-auto h-1 bg-blue-700 mb-5" />
+            <p className="text-lg text-gray-200 mt-auto">Find me on:</p>
+            <div className="flex flex-row w-1/4 justify-center">
+              <a href="https://github.com/D3vss" target={"_blank"}>
+                <FaGithubSquare className="text-gray-200 text-4xl" />
+              </a>
+              <a href="https://twitter.com/mohamedoudoun" target={"_blank"}>
+                <FaTwitterSquare className="text-gray-200 text-4xl" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/oudoun-mohamed/"
+                target={"_blank"}
+              >
+                <FaLinkedin className="text-gray-200 text-4xl" />
+              </a>
             </div>
 
-            <p className="mt-auto text-sm text-gray-600/[.6]">
+            <p className="mt-auto text-sm text-gray-600/[.6] mb-5">
               © 2022 <a href="www.github.com/d3vss">D3vss</a> - Created by
               Oudoun Mohamed
             </p>
