@@ -39,10 +39,10 @@ function HomePage(props) {
           </footer>
         </section>
         <section className="bg-bgFixed bg-cover bg-no-repeat w-full flex flex-col justify-center items-center">
-          <div className="grayscale flex flex-col w-full px-20 py-20">
-            <img src={vect1} width={100} className="self-end" />
-            <img src={vect2} width={110} />
-            <img src={vect3} width={90} className="self-end" />
+          <div className="flex flex-col w-full px-20 py-20">
+            <img src={vect1} width={150} className="self-end" />
+            <img src={vect2} width={70} />
+            <img src={vect3} width={110} className="self-end" />
           </div>
           <Button label={"Let's get in touch!"} variant="filled" />
         </section>
