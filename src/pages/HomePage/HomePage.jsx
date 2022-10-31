@@ -11,17 +11,19 @@ function HomePage(props) {
     <Layout>
       <div className="flex flex-row justify-evenly h-full">
         <section className="w-full  flex flex-col">
-          <p className="text-5xl font-bold mb-5">
-            Hi! <br /> I am Oudoun Mohamed.
-          </p>
-          <p className="text-base font-normal mb-10">
-            A Web and Mobile Developer, and a Data enthusiast.
-          </p>
-
-          <div className="flex flex-row w-4/12 justify-between">
-            <Button label={"Hire Me!"} variant="filled" />
-            <Button label={"Projects"} variant="outlined" />
+          <div>
+            <p className="text-5xl font-bold mb-5">
+              Hi! <br /> I am Oudoun Mohamed.
+            </p>
+            <p className="text-base font-normal mb-10">
+              A Web and Mobile Developer, and a Data enthusiast.
+            </p>
+            <div className="flex flex-row w-4/12 justify-between">
+              <Button label={"Hire Me!"} variant="filled" />
+              <Button label={"Projects"} variant="outlined" />
+            </div>
           </div>
+
           <footer className="flex flex-col items-center mt-auto container bg-gray-900 h-1/4">
             <div className="container px-20 mx-auto h-1 bg-blue-700" />
 
@@ -38,7 +40,7 @@ function HomePage(props) {
             </p>
           </footer>
         </section>
-        <section className="bg-bgFixed bg-cover bg-no-repeat w-full flex flex-col justify-center items-center">
+        <section className="bg-hand2 bg-center bg-cover bg-no-repeat w-full flex flex-col justify-center items-center">
           <div className="flex flex-col w-full px-20 py-20">
             <img src={vect1} width={150} className="self-end" />
             <img src={vect2} width={70} />
