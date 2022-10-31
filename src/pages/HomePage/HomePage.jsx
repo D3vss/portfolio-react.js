@@ -18,8 +18,9 @@ function HomePage(props) {
             <Button label={"Hire Me!"} variant="filled" />
             <Button label={"Projects"} variant="outlined" />
           </div>
-          <div className="container px-20 mx-auto h-1 bg-blue-700" />
-          <footer className="mt-auto container bg-gray-700 h-1/2"></footer>
+          <footer className="mt-auto container bg-gray-700 h-1/4">
+            <div className="container px-20 mx-auto h-1 bg-blue-700" />
+          </footer>
         </section>
         <section className="grayscale bg-me bg-center bg-contain bg-no-repeat w-full "></section>
       </div>
