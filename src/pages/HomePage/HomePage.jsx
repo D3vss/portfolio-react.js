@@ -10,8 +10,8 @@ function HomePage(props) {
   return (
     <Layout>
       <div className="flex flex-row justify-evenly h-full">
-        <section className="w-full  flex flex-col">
-          <div>
+        <section className="w-full  flex flex-col justify-center">
+          <div className="mt-auto">
             <p className="text-5xl font-bold mb-5">
               Hi! <br /> I am Oudoun Mohamed.
             </p>
