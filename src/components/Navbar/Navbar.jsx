@@ -7,7 +7,7 @@ import logo from "../../assets/assets.logo.png";
 function Navbar(props) {
   let [toggleNav, setToggleNav] = useState(false);
   return (
-    <div className="container mx-auto bg-black py-8 flex flex-row justify-between items-center text-white">
+    <div className="container px-20 mx-auto bg-black py-8 flex flex-row justify-between items-center text-white">
       <img src={logo} />
       <div
         className={
