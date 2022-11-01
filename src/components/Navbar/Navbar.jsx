@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { Button } from "../";
 
@@ -18,16 +19,26 @@ function Navbar(props) {
             "lg:flex lg:flex-row lg:static lg:justify-between lg:w-1/4 bg-black h-1/4"
           }
         >
-          <span>Home</span>
-          <span>About</span>
-          <span>Projects</span>
-          <div className=" lg:hidden">
+          <Link to={"/"}>
+            <span>Home</span>
+          </Link>
+          <Link to={"/about"}>
+            <span>About</span>
+          </Link>
+          <Link to={"/projects"}>
+            <span>Projects</span>
+          </Link>
+          <Link to={"/contact"}>
+            <div className=" lg:hidden">
+              <Button label={"Let's Chat!"} variant="outlined" />
+            </div>
+          </Link>
+        </div>
+        <Link to={"/contact"}>
+          <div className="hidden lg:block">
             <Button label={"Let's Chat!"} variant="outlined" />
           </div>
-        </div>
-        <div className="hidden lg:block">
-          <Button label={"Let's Chat!"} variant="outlined" />
-        </div>
+        </Link>
         <div className="visible lg:hidden">
           <Button
             variant={"filled"}
