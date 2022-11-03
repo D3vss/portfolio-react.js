@@ -53,7 +53,7 @@ function HomePage(props) {
             </p>
           </footer>
         </section>
-        <section className="bg-hand2 bg-center bg-cover bg-no-repeat w-full flex flex-col justify-center items-center">
+        <section className="bg-bg3 bg-center bg-contain bg-no-repeat w-full flex flex-col justify-center items-center">
           <div className="flex flex-col w-full px-20 py-20">
             <img src={vect1} width={150} className="self-end" />
             <img src={vect2} width={70} />

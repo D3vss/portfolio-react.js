@@ -8,6 +8,7 @@ module.exports = {
         hand: "url('/src/assets/hand-hey.png')",
         hand2: "url('/src/assets/rock-hand.png')",
         bgFixed: "url('/src/assets/bg.png')",
+        bg3: "url('/src/assets/bg3.png')",
       },
     },
   },
