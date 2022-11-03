@@ -5,7 +5,7 @@ function Layout({ children }) {
   return (
     <div className="bg-black h-screen flex flex-col">
       <Navbar />
-      <div className="container px-20 mx-auto text-white h-full">
+      <div className="bg-black container px-20 mx-auto text-white h-full">
         {children}
       </div>
     </div>
