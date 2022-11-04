@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Layout, Card } from "../../components";
 
 function ProjectsPage(props) {
@@ -38,6 +37,18 @@ function ProjectsPage(props) {
         color: "bg-green-500",
       },
     },
+    {
+      title: "Weather App",
+      subtitle:
+        "A simple web app that uses OpenWeather API to preview weather.",
+      url: "https://github.com/D3vss/Weather-app",
+      media:
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPJmQx_xoOiiBfcWnDVk1OqOoj6YriFz71j_zDPb6CY4ErnTnXaofF5f3SY5niOJaYG2y3AY2kvoiCQYY-vTG65pdEBMS9DAxyGLbe3diYeu_defG8YlXlttwuIPGnuC7YCd_OKopZ5wuwYO7mkhuY9bISs82Cr0Ie6Yip_o7_HRs0tVxrDkbKXqXKLw/w777-h355/wp.png",
+      type: {
+        label: "web",
+        color: "bg-green-500",
+      },
+    },
   ];
 
   return (
@@ -47,7 +58,7 @@ function ProjectsPage(props) {
           <p className="text-4xl font-bold">Projects:</p>
           <div className="h-1 bg-blue-700 max-w-xs my-2 " />
         </div>
-        <section className="container flex flex-row w-full justify-between items-center">
+        <section className="container grid w-full justify-between items-center">
           {projects.map((project) => (
             <Card
               key={project.title}
