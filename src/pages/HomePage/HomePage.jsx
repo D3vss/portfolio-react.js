@@ -19,7 +19,7 @@ function HomePage(props) {
             <p className="text-base font-normal mb-10">
               A Web and Mobile Developer, and a Data enthusiast.
             </p>
-            <div className="flex flex-row w-full">
+            <div className="flex flex-row gap-2 w-full">
               <Button label={"Hire Me!"} variant="filled" />
               <Button
                 label={"Projects"}
@@ -27,6 +27,28 @@ function HomePage(props) {
                 variant="outlined"
               />
             </div>
+          </div>
+          <div className="mt-auto">
+            <p>
+              Check out my profile at{" "}
+              <a
+                href="https://legiit.com/Designit"
+                target="_blank"
+                className="font-bold text-blue-500"
+              >
+                Legiit
+              </a>
+            </p>
+            <p>
+              Check out my badges at{" "}
+              <a
+                href="https://www.credly.com/users/mohamed-oudoun/badges"
+                target="_blank"
+                className="font-bold text-orange-500"
+              >
+                Credly
+              </a>
+            </p>
           </div>
 
           <footer className="flex flex-col items-center mt-auto container bg-gray-900">
@@ -53,7 +75,7 @@ function HomePage(props) {
             </p>
           </footer>
         </section>
-        <section className="bg-bg3 bg-center bg-contain bg-no-repeat w-full flex flex-col justify-center items-center">
+        <section className="bg-bg3 bg-center bg-contain bg-no-repeat w-full lg:flex flex-col justify-center items-center lg:visible hidden">
           <div className="flex flex-col w-full px-20 py-20">
             <img src={vect1} width={150} className="self-end" />
             <img src={vect2} width={70} />
