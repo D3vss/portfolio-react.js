@@ -13,6 +13,7 @@ function ProjectsPage(props) {
         label: "data",
         color: "bg-red-500",
       },
+      onGoing: false,
     },
     {
       title: "Sanad Card",
@@ -24,6 +25,7 @@ function ProjectsPage(props) {
         label: "web",
         color: "bg-green-500",
       },
+      onGoing: false,
     },
     {
       title: "Weather App",
@@ -36,18 +38,33 @@ function ProjectsPage(props) {
         label: "web",
         color: "bg-green-500",
       },
+      onGoing: false,
     },
     {
-      title: "Weather App",
+      title: "Showcase App",
       subtitle:
-        "A simple web app that uses OpenWeather API to preview weather.",
-      url: "https://github.com/D3vss/Weather-app",
+        "A platform to showcase your work and portfolio, and look for potential jobs.",
+      url: "https://github.com/D3vss/showcase-app",
       media:
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPJmQx_xoOiiBfcWnDVk1OqOoj6YriFz71j_zDPb6CY4ErnTnXaofF5f3SY5niOJaYG2y3AY2kvoiCQYY-vTG65pdEBMS9DAxyGLbe3diYeu_defG8YlXlttwuIPGnuC7YCd_OKopZ5wuwYO7mkhuY9bISs82Cr0Ie6Yip_o7_HRs0tVxrDkbKXqXKLw/w777-h355/wp.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgADimkHJttsc-ZR1Y0nBe2YMuhSZwXnHY_41n_EgjNWZpiklt1uRbAkoalV0fGnu8svkGBhEu6uBzOe-gVr8kucOad8eFX_bsEYAcebeT7hKToBpXiuoVN9dlnhS0F-TBl6Ng3LX4ezcw6lmI69N3GaWSiYb_BgZJf0K9Po9Fcskjea5olp3Wtj9SzAg/s720/On%20going%20Project.png",
       type: {
         label: "web",
         color: "bg-green-500",
       },
+      onGoing: true,
+    },
+    {
+      title: "Chakir App",
+      subtitle:
+        "A fraud detection solution to prevent forgery of technical visit papers of vehicules in Morocoo.",
+      url: "https://github.com/D3vss/Chakir-App",
+      media:
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfSms9FBwGqI-2BiH3zyw947n0AwwwXmzTEy8hAv2fKaIPlIO1zSp21W326ybFDPErI4zhwS6aZnn6o8irB9lTD-iYbbDSBlaZZ0GMjoOOkfaPRLaQrbRGVpV4Kh5963R0ogNygSKhrGdIR3yKgGWlAgHdbhxpUxToqU3E44xxmUktm50XQzN1SrrPMg/w716-h398/On%20going%20Project%20(1).png",
+      type: {
+        label: "mobile",
+        color: "bg-yellow-500",
+      },
+      onGoing: false,
     },
   ];
 
@@ -58,7 +75,7 @@ function ProjectsPage(props) {
           <p className="text-4xl font-bold">Projects:</p>
           <div className="h-1 bg-blue-700 max-w-xs my-2 " />
         </div>
-        <section className="container grid w-full justify-between items-center">
+        <section className="container grid grid-cols-3 gap-4">
           {projects.map((project) => (
             <Card
               key={project.title}

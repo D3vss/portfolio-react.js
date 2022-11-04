@@ -1,7 +1,7 @@
 import React from "react";
 import { Badge } from "../";
 
-function Card({ title, subtilte, media, url, type }) {
+function Card({ title, subtilte, media, url, type, onGoing }) {
   return (
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
       <a href={url} target="_blank">
@@ -37,7 +37,10 @@ function Card({ title, subtilte, media, url, type }) {
               ></path>
             </svg>
           </a>
-          <Badge label={type.label} color={type.color} />
+          <div className="flex flex-col">
+            <Badge label={type.label} color={type.color} />
+            {onGoing && <Badge label={"on going"} color={"bg-blue-300"} />}
+          </div>
         </div>
       </div>
     </div>
