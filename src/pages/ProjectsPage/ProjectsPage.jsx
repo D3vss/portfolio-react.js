@@ -10,15 +10,21 @@ function ProjectsPage(props) {
       url: "https://github.com/D3vss/U.S.-Medical-Insurance-Costs",
       media:
         "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6nM2AdxxNW-os1OxzEir4ojHrIozzcyUCTh5h5HgN1zLk0Zj8uAPIKH8m41Airt_j_YOhmAjYb48J0wzVD0yw65t7k_dFCXuJvaDFaABzSMJFL1hw8l28pPncsn3sWlWQhDpj3eCKQ4BVFxtVVcZny1nV5V4oF97ReQ21YOQW3wUcyqljy3WwRqAS6g/w719-h396/us.png",
-      type: "data",
+      type: {
+        label: "data",
+        color: "bg-red-500",
+      },
     },
     {
       title: "Sanad Card",
-      subtitle: "A digital business card.",
+      subtitle: "A modern web app that acts as a digital business card.",
       url: "https://github.com/RedRosh/sanad-card",
       media:
         "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6GCuuvy_lhiwDRmq36Ta4OEcUtXsYiOa0k5_IMhzjcHYTi7Kaynk_IrjwpVkrfjFO1TqyiNvcX8OoPR4sxQgs7UvJEwDcTuFAsPVsnR0vlAaphxkeAHuOVat3rOwMvw3jElOQNvWAaWMQ9doCb6TlFWrEyK0B8CRdd61eAaR8vjgtDlC0Ipb9trvd4g/s1920/sanadcard.png",
-      type: "web",
+      type: {
+        label: "web",
+        color: "bg-green-500",
+      },
     },
     {
       title: "Weather App",
@@ -27,7 +33,10 @@ function ProjectsPage(props) {
       url: "https://github.com/D3vss/Weather-app",
       media:
         "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPJmQx_xoOiiBfcWnDVk1OqOoj6YriFz71j_zDPb6CY4ErnTnXaofF5f3SY5niOJaYG2y3AY2kvoiCQYY-vTG65pdEBMS9DAxyGLbe3diYeu_defG8YlXlttwuIPGnuC7YCd_OKopZ5wuwYO7mkhuY9bISs82Cr0Ie6Yip_o7_HRs0tVxrDkbKXqXKLw/w777-h355/wp.png",
-      type: "web",
+      type: {
+        label: "web",
+        color: "bg-green-500",
+      },
     },
   ];
 
@@ -46,6 +55,7 @@ function ProjectsPage(props) {
               media={project.media}
               subtilte={project.subtitle}
               url={project.url}
+              type={project.type}
             />
           ))}
         </section>
