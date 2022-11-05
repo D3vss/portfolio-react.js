@@ -9,7 +9,7 @@ import vect3 from "../../assets/vect3.png";
 
 function HomePage(props) {
   return (
-    <Layout>
+    <Layout className={"h-screen"}>
       <div className="flex flex-row justify-evenly max-h-full min-h-full">
         <section className="w-full flex flex-col justify-center">
           <div className="mt-auto">
