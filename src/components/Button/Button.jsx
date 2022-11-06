@@ -1,8 +1,9 @@
 import React from "react";
 
-function Button({ label, variant, onClick, onSubmit, type, icon }) {
+function Button({ label, variant, onClick, onSubmit, type, icon, value }) {
   return (
     <button
+      value={value}
       type={type}
       className={
         variant == "filled"
