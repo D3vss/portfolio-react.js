@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { Button, PageLink } from "../";
-
+import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
+import { CgCloseR } from "react-icons/cg";
 import logo from "../../assets/assets.logo.png";
 
 function Navbar({ setBlur }) {
@@ -39,11 +40,16 @@ function Navbar({ setBlur }) {
           </div>
         </Link>
         <div className="visible lg:hidden">
-          <Button
-            variant={"filled"}
-            label="X"
+          <div
+            className="cursor-pointer"
             onClick={() => setToggleNav(!toggleNav)}
-          />
+          >
+            {!toggleNav ? (
+              <HiOutlineBars3CenterLeft className="text-3xl" />
+            ) : (
+              <CgCloseR className="text-3xl" />
+            )}
+          </div>
         </div>
       </div>
       <div className="container px-20 mx-auto h-1 bg-blue-700" />
