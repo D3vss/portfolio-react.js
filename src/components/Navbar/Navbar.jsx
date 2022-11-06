@@ -11,11 +11,11 @@ function Navbar({ setBlur }) {
   useEffect(() => {
     if (toggleNav) setBlur("blur-sm");
     else setBlur("blur-none");
-  }, [toggleNav]);
+  });
   return (
     <nav className="px-20 z-50">
       <div className="bg-black py-8 flex flex-row justify-between items-center text-white">
-        <img src={logo} />
+        <img src={logo} alt="D3vss's Logo" />
         <div
           className={
             (toggleNav

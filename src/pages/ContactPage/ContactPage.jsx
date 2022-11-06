@@ -1,11 +1,10 @@
 import React from "react";
 
 import { Layout, Button } from "../../components";
-import emailjs, { init } from "@emailjs/browser";
 
 function ContactPage(props) {
   return (
-    <Layout className={"min-h-screen"}>
+    <Layout className={"min-h-screen"} title={"Contact Me"}>
       <section>
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight font-bold text-center text-white">

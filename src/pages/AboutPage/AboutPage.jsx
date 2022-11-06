@@ -5,7 +5,7 @@ import { Chrono } from "react-chrono";
 import me from "../../assets/me2.png";
 function AboutPage(props) {
   return (
-    <Layout className={"min-h-screen"}>
+    <Layout className={"min-h-screen"} title={"About Me"}>
       <div className="container flex flex-col py-20">
         <div>
           <p className="text-4xl font-bold">About me:</p>

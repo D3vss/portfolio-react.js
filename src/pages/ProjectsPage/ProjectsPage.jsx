@@ -69,7 +69,7 @@ function ProjectsPage(props) {
   ];
 
   return (
-    <Layout className={"min-h-screen"}>
+    <Layout className={"min-h-screen"} title={"Projects"}>
       <div className="flex flex-col w-full py-20 bg-black ">
         <div>
           <p className="text-4xl font-bold">Projects:</p>
