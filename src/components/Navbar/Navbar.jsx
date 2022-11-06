@@ -1,33 +1,32 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { Button } from "../";
+import { Button, PageLink } from "../";
 
 import logo from "../../assets/assets.logo.png";
 
-function Navbar(props) {
+function Navbar({ setBlur }) {
   let [toggleNav, setToggleNav] = useState(false);
+  useEffect(() => {
+    if (toggleNav) setBlur("blur-sm");
+    else setBlur("blur-none");
+  }, [toggleNav]);
   return (
-    <nav className="px-20">
+    <nav className="px-20 z-50">
       <div className="bg-black py-8 flex flex-row justify-between items-center text-white">
         <img src={logo} />
         <div
           className={
             (toggleNav
-              ? "container mx-auto flex flex-col absolute top-[120px] left-0 right-0 items-center bottom-0 container w-full justify-evenly py-5"
+              ? "container mx-auto flex flex-col absolute top-[120px] left-0 right-0 bottom-0 items-center  container w-full justify-evenly py-5 z-50 "
               : "hidden ") +
-            "lg:flex lg:flex-row lg:static lg:justify-between lg:w-1/4 bg-red-500 h-1/4"
+            "lg:flex lg:flex-row lg:static lg:justify-between lg:w-1/4 ring-1 lg:ring-0 bg-black h-1/2 opacity-95 lg:opacity-1"
           }
         >
-          <Link to={"/"}>
-            <span>Home</span>
-          </Link>
-          <Link to={"/about"}>
-            <span>About</span>
-          </Link>
-          <Link to={"/projects"}>
-            <span>Projects</span>
-          </Link>
+          <PageLink link={"/"} label={"Home"} />
+          <PageLink link={"/about"} label={"About"} />
+          <PageLink link={"/projects"} label={"Projects"} />
+
           <Link to={"/contact"}>
             <div className=" lg:hidden">
               <Button label={"Let's Chat!"} variant="outlined" />
