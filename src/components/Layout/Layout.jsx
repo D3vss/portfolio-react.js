@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Navbar } from "../";
-
 import { Helmet } from "react-helmet";
 
 function Layout({ children, className, title }) {

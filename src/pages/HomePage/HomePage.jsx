@@ -34,6 +34,7 @@ function HomePage(props) {
               <a
                 href="https://legiit.com/Designit"
                 target="_blank"
+                rel="noreferrer"
                 className="font-bold text-blue-500"
               >
                 Legiit
@@ -44,6 +45,7 @@ function HomePage(props) {
               <a
                 href="https://www.credly.com/users/mohamed-oudoun/badges"
                 target="_blank"
+                rel="noreferrer"
                 className="font-bold text-orange-500"
               >
                 Credly
@@ -55,15 +57,24 @@ function HomePage(props) {
             <div className="container px-20 mx-auto h-1 bg-blue-700 mb-5" />
             <p className="text-lg text-gray-200 mt-auto">Find me on:</p>
             <div className="flex flex-row w-1/4 justify-center">
-              <a href="https://github.com/D3vss" target={"_blank"}>
+              <a
+                href="https://github.com/D3vss"
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 <FaGithubSquare className="text-gray-200 text-4xl" />
               </a>
-              <a href="https://twitter.com/mohamedoudoun" target={"_blank"}>
+              <a
+                href="https://twitter.com/mohamedoudoun"
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 <FaTwitterSquare className="text-gray-200 text-4xl" />
               </a>
               <a
                 href="https://www.linkedin.com/in/oudoun-mohamed/"
                 target={"_blank"}
+                rel="noreferrer"
               >
                 <FaLinkedin className="text-gray-200 text-4xl" />
               </a>
@@ -77,9 +88,9 @@ function HomePage(props) {
         </section>
         <section className="bg-bg3 bg-center bg-contain bg-no-repeat w-full lg:flex flex-col justify-center items-center lg:visible hidden">
           <div className="flex flex-col w-full px-20 py-20">
-            <img src={vect1} width={150} className="self-end" />
-            <img src={vect2} width={70} />
-            <img src={vect3} width={110} className="self-end" />
+            <img src={vect1} width={150} className="self-end" alt="vector" />
+            <img src={vect2} width={70} alt="vector" />
+            <img src={vect3} width={110} className="self-end" alt="vector" />
           </div>
           <Button label={"Let's get in touch!"} variant="filled" />
         </section>

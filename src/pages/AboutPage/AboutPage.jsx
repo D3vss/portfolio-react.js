@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Layout } from "../../components";
-import { Chrono } from "react-chrono";
 import me from "../../assets/me2.png";
 function AboutPage(props) {
   return (
@@ -33,7 +32,7 @@ function AboutPage(props) {
             discover new things, and live adventures.
           </p>
           <div className="w-52 h-52 rounded-sm ring overflow-hidden my-5">
-            <img src={me} width={300} />
+            <img src={me} width={300} alt="background" />
           </div>
         </section>
       </div>
